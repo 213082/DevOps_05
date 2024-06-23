@@ -4,7 +4,7 @@
 # You can adjust the behavior by modifying this file.
 # For more information, see:
 # https://github.com/github/super-linter
-name: Lint Code Base
+name: Lint Code Base and Docker Push
 
 on:
   push:
@@ -49,4 +49,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: leona10/devops_05:latest
+          tags: leona10/racepulse:latest
